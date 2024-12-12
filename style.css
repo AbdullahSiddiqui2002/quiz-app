@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#5200FF, #E486EE);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.angkor {
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main_container {
+    border-radius: 50px;
+    width: 700px;
+    background-color: #000E56;
+}
+
+.main_container .header {
+    background-color: #120084;
+    padding: 20px 0;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container .body {
+    padding: 20px;
+    text-align: center;
+}
+
+.main_container .body .heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.main_container .body .form-label {
+    color: #05FF00;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 20px 0 20px 0;
+}
+
+.main_container .body .form-control {
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: none;
+    color: white;
+    background-color: #5200FF;
+}
+
+.main_container .body .form-control::placeholder{
+    color: white;
+}
+
+.main_container .body button{
+    all: unset;
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px 0 0 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    .main_container {
+        border-radius: 50px;
+        width: 500px;
+        background-color: #000E56;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main_container {
+        border-radius: 50px;
+        width: 100%;
+        background-color: #000E56;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .main_container .body .heading {
+        font-size: 1.4rem;
+    }
+}
