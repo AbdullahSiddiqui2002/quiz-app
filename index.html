@@ -11,7 +11,7 @@
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Include SweetAlert CSS and JS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -29,28 +29,36 @@
         <button class="montserrat" onclick="startQuiz()">Play Now <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
-    <div id="quiz_container"> 
-      <h1 class="text-light">QUESTION</h1>
-      <h4 class="text-light" id="question"></h4>
-      <div id="option_list">
-          <!-- <input type="radio" name="option" /> <label class="text-light">Hypertext markup language</label>
-          <br>
-          <input type="radio" name="option" /> <label class="text-light">Hypertext markup language</label>
-          <br>
-          <input type="radio" name="option" /> <label class="text-light">Hypertext markup language</label>
-          <br>
-          <input type="radio" name="option" /> <label class="text-light">Hypertext markup language</label>
-          <br> -->
+    <div id="quiz_container" class="quiz_container">
+      <div class="header">
+        <h1 class="text-light montserrat">QUESTION</h1>
       </div>
-      <button  class="btn btn-light" onclick="nextQuest()">Next Question</button>
-  </div>
-   <!-- result -->
-   
-   <div id="result">
-       <h1 class="text-light">Result</h1>
-       <h4 class="text-light" id="resultText"></h4>
-       <button  class="btn btn-light" onclick="restartQuiz()">Restart Quiz</button> 
-   </div>
+      <div class="body">
+        <h4 class="text-light montserrat" id="question"></h4>
+        <div id="option_list" class="montserrat">
+
+        </div>
+        <p class="questionno montserrat"><span id="current"></span> / <span id="total"></span></p>
+        <button class="montserrat" onclick="nextQuest()"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+
+    </div>
+
+
+    <div id="result_container" class="result_container">
+      <div class="header">
+        <h1 class="text-light montserrat">Your Quiz is Finished.</h1>
+      </div>
+      <div class="body">
+        <h2 class="heading montserrat">Result</h2>
+        <p class="text-light name montserrat" id="name"></p>
+        <div class="scorediv montserrat">
+          <h4 class="text-light montserrat" id="resultText"></h4>
+        </div>
+        <p class="remarks" id="remarks"></p>
+        <button class="montserrat restartbtn" onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -58,7 +66,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/js/all.min.js"
     integrity="sha512-1JkMy1LR9bTo3psH+H4SV5bO2dFylgOy+UJhMus1zF4VEFuZVu5lsi4I6iIndE4N9p01z1554ZDcvMSjMaqCBQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="script.js"></script>
 </body>
 
