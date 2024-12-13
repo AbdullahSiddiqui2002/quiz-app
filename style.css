@@ -104,13 +104,16 @@ body {
     padding: 5px 10px;
     margin: 10px 0;
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
 .quiz_container .body button{
     all: unset;
-    position: absolute; /* Positioning the arrow */
-    bottom: 25px; /* Adjust as needed */
-    right: 50px; /* Place the arrow to the right of the container */
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
     cursor: pointer;
 }
 
@@ -193,6 +196,10 @@ body {
     .quiz_container .body {
         padding: 20px 50px 40px 50px;
     }
+
+    .result_container .body{
+        padding: 20px 50px 80px 50px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -209,12 +216,20 @@ body {
     .quiz_container .body {
         padding: 20px 30px 40px 30px;
     }
+
+    .result_container .body{
+        padding: 20px 30px 80px 30px;
+    }
 }
 
 @media screen and (max-width: 375px){
 
     .quiz_container .body {
         padding: 20px 10px 40px 10px;
+    }
+
+    .result_container .body{
+        padding: 20px 10px 80px 10px;
     }
 }
 
