@@ -47,7 +47,7 @@ body {
     align-items: center;
 }
 
-.main_container .body{
+.main_container .body {
     padding: 20px;
     text-align: center;
 }
@@ -58,6 +58,7 @@ body {
     letter-spacing: 1px;
 }
 
+
 .main_container .body .form-label {
     color: #05FF00;
     text-transform: capitalize;
@@ -65,19 +66,26 @@ body {
     margin: 20px 0 20px 0;
 }
 
-.main_container .body .form-control {
+.main_container .body .form-control, .main_container .body .form-select {
     width: 70%;
     margin: 0 auto;
     box-shadow: none;
     color: white;
+    border: 1px solid white;
     background-color: #5200FF;
+    margin-bottom: 10px;
 }
 
-.main_container .body .form-control::placeholder{
+.main_container .body .form-select option::selection {
+    background-color: white !important;
+    color: #5200FF !important;
+}
+
+.main_container .body .form-control::placeholder, .main_container .body .form-select::placeholder {
     color: white;
 }
 
-.main_container .body button{
+.main_container .body button {
     all: unset;
     color: white;
     font-size: 1.2rem;
@@ -87,7 +95,7 @@ body {
 
 
 
-#quiz_container, #result_container{
+#quiz_container, #result_container {
     display: none;
 }
 
@@ -109,7 +117,7 @@ body {
     align-items: baseline;
 }
 
-.quiz_container .body button{
+.quiz_container .body button {
     all: unset;
     position: absolute;
     bottom: 25px;
@@ -117,56 +125,56 @@ body {
     cursor: pointer;
 }
 
-.quiz_container .body button svg{
+.quiz_container .body button svg {
     color: #00FFFF !important;
     font-size: 1.6rem;
-    
+
 }
 
-.quiz_container .body .questionno{
+.quiz_container .body .questionno {
     text-align: center;
     margin: 15px 0 0 0;
 }
 
-.result_container .body{
+.result_container .body {
     padding: 20px 80px 80px 80px;
     text-align: center;
     position: relative;
     color: white;
 }
 
-.result_container .body .heading{
+.result_container .body .heading {
     color: #05FF00;
 }
 
-.result_container .body .name{
+.result_container .body .name {
     font-size: 20px;
 }
 
-.result_container .body .scorediv{
+.result_container .body .scorediv {
     background-color: #5200FF;
     color: white;
     width: fit-content;
     margin: 0 auto;
     padding: 15px 40px;
     border-radius: 10px;
-    
+
 }
 
-.result_container .body .scorediv h4{
+.result_container .body .scorediv h4 {
     font-weight: bold;
     font-size: 22px;
     margin: 0 !important;
 }
 
-.result_container .body .remarks{
+.result_container .body .remarks {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     margin: 20px 0 5px 0;
 }
 
-.result_container .body .restartbtn{
+.result_container .body .restartbtn {
     all: unset;
     background-color: #5200FF;
     color: white;
@@ -179,11 +187,11 @@ body {
     font-weight: 900;
 }
 
-.result_container .body .restartbtn:hover{
+.result_container .body .restartbtn:hover {
     background-color: #4506cb;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .main_container {
         border-radius: 50px;
         width: 500px;
@@ -191,18 +199,18 @@ body {
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
 
     .quiz_container .body {
         padding: 20px 50px 40px 50px;
     }
 
-    .result_container .body{
+    .result_container .body {
         padding: 20px 50px 80px 50px;
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
     .main_container {
         border-radius: 50px;
         width: 100%;
@@ -211,29 +219,29 @@ body {
 
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
 
     .quiz_container .body {
         padding: 20px 30px 40px 30px;
     }
 
-    .result_container .body{
+    .result_container .body {
         padding: 20px 30px 80px 30px;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
 
     .quiz_container .body {
         padding: 20px 10px 40px 10px;
     }
 
-    .result_container .body{
+    .result_container .body {
         padding: 20px 10px 80px 10px;
     }
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
     .main_container .body .heading {
         font-size: 1.4rem;
     }
