@@ -1166,10 +1166,14 @@ function loadQuestions() {
 
         let labelElement = document.createElement("label");
         labelElement.innerText = currentQuestionObject.option[i];
-        labelElement.setAttribute("class", "text-light ms-2")
-        optionList.appendChild(optiondiv);
+        labelElement.setAttribute("class", "text-light ms-2");
+        
         optiondiv.appendChild(inputElement);
         optiondiv.appendChild(labelElement);
+        optiondiv.addEventListener('click', function() {
+            inputElement.checked = true;
+        });
+        optionList.appendChild(optiondiv);
         console.log(inputElement)
     }
 
