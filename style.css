@@ -147,7 +147,7 @@ body {
     color: #05FF00;
 }
 
-.result_container .body .name {
+.result_container .body .name, .result_container .body .topicdisplay {
     font-size: 20px;
 }
 

@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Include SweetAlert CSS and JS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,17 +29,17 @@
         <label for="username" class="form-label montserrat">enter your name</label>
         <input type="text" id="username" class="form-control montserrat" name="username"
           placeholder="Enter Your Name" />
-          <div data-bs-theme="dark">
-            <select name="topic" id="topic"  class="form-select">
-              <option value="">Choose Topic</option>
-              <option value="html">HTML</option>
-              <option value="css">CSS</option>
-              <option value="js">JS</option>
-              <option value="bootstrap">Bootstrap</option>
-              <option value="react">React JS</option>
-              <option value="python">Python</option>
-            </select>
-          </div>
+        <div data-bs-theme="dark">
+          <select name="topic" id="topic" class="form-select">
+            <option value="">Choose Topic</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JS</option>
+            <option value="bootstrap">Bootstrap</option>
+            <option value="react">React JS</option>
+            <option value="python">Python</option>
+          </select>
+        </div>
         <button class="montserrat" onclick="startQuiz()">Play Now <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
@@ -66,6 +65,7 @@
       </div>
       <div class="body">
         <h2 class="heading montserrat">Result</h2>
+        <p class="text-light topicdisplay montserrat" id="topicdisplay"></p>
         <p class="text-light name montserrat" id="name"></p>
         <div class="scorediv montserrat">
           <h4 class="text-light montserrat" id="resultText"></h4>
