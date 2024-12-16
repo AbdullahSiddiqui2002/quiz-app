@@ -32,13 +32,13 @@ body {
     height: 100vh;
 }
 
-.main_container, .quiz_container, .result_container {
+.main_container, .quiz_container, .result_container, .answers_container {
     border-radius: 50px;
     width: 700px;
     background-color: #000E56;
 }
 
-.main_container .header, .quiz_container .header, .result_container .header {
+.main_container .header, .quiz_container .header, .result_container .header, .answers_container .header {
     background-color: #120084;
     padding: 20px 0;
     border-radius: 50px 50px 0px 0px;
@@ -52,12 +52,15 @@ body {
     text-align: center;
 }
 
+.answers_container .body {
+    padding: 20px;
+}
+
 .main_container .body .heading {
     font-size: 2rem;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
-
 
 .main_container .body .form-label {
     color: #05FF00;
@@ -93,20 +96,18 @@ body {
     cursor: pointer;
 }
 
-
-
-#quiz_container, #result_container {
+#quiz_container, #result_container, .answers_container {
     display: none;
 }
 
-.quiz_container .body {
+.quiz_container .body, .answers_container .body {
     padding: 20px 80px 40px 80px;
     text-align: left;
     position: relative;
     color: white;
 }
 
-.quiz_container .body .optiondiv {
+.quiz_container .body .optiondiv, .answers_container .body .optiondiv {
     color: white;
     background-color: #5200FF;
     padding: 5px 10px;
@@ -117,7 +118,7 @@ body {
     align-items: baseline;
 }
 
-.quiz_container .body button {
+.quiz_container .body button, .answers_container .body button {
     all: unset;
     position: absolute;
     bottom: 25px;
@@ -125,13 +126,13 @@ body {
     cursor: pointer;
 }
 
-.quiz_container .body button svg {
+.quiz_container .body button svg, .answers_container .body button svg {
     color: #00FFFF !important;
     font-size: 1.6rem;
 
 }
 
-.quiz_container .body .questionno {
+.quiz_container .body .questionno, .answers_container .body .questionno {
     text-align: center;
     margin: 15px 0 0 0;
 }
@@ -184,10 +185,27 @@ body {
     cursor: pointer;
     position: absolute;
     right: 30px;
+    bottom: 20px;
     font-weight: 900;
 }
 
 .result_container .body .restartbtn:hover {
+    background-color: #4506cb;
+}
+
+.result_container .body .answerbtn {
+    all: unset;
+    background-color: #5200FF;
+    color: white;
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 900;
+}
+
+.result_container .body .answerbtn:hover {
     background-color: #4506cb;
 }
 
